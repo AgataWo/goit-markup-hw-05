@@ -42,6 +42,7 @@ body {
 .link-footer:hover,
 .link-footer:focus {
   color: var(--main-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-container {
@@ -94,7 +95,7 @@ body {
   margin-right: 0px;
 }
 
-.nav-item{
+.nav-item {
   padding-right: 46px;
 }
 
@@ -114,12 +115,19 @@ body {
 .tel-a:hover,
 .tel-a:focus {
   fill: var(--main-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel-a {
   padding-right: 0;
   padding-left: 10px;
   fill: #757575;
+}
+
+/* animacje */
+
+#active-nav::after{
+  
 }
 
 /* END HEADER -------------------------------------------------- */
@@ -166,6 +174,7 @@ body {
   color: white;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .banner {
@@ -235,6 +244,7 @@ body {
 .project:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-img {
@@ -309,6 +319,7 @@ body {
 .a-member-social-item:focus {
   fill: white;
   background: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ************************************************************************* */
@@ -384,6 +395,7 @@ body {
   padding-left: 0;
   margin: 0;
   list-style: none;
+  position: relative;
 }
 
 .description-item:last-child,
@@ -400,6 +412,27 @@ body {
   padding-left: 0;
   margin-left: 0;
 }
+
+.specialities-label {
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  top: 75.5%;
+  height: 23.5%;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* zespół */
 
 .team {
   background-color: #f5f4fa;
@@ -444,6 +477,7 @@ body {
   border-color: #2196f3;
   fill: #2196f3;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* FOOTER **************************************************************************************************** */
@@ -522,6 +556,7 @@ body {
 .a-social-item:hover,
 .a-social-item:focus {
   background-color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* END FOOTER  */
