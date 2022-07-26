@@ -65,10 +65,10 @@ body {
 }
 
 .nav-ul {
-  /* width: 261px; */
   justify-content: space-around;
   list-style: none;
   padding-left: 93px;
+  position: relative;
 }
 
 .nav-icon {
@@ -127,7 +127,13 @@ body {
 /* animacje */
 
 #active-nav::after{
-  
+  position: absolute;
+display: block;
+top: 45px;
+width: 58px;
+height: 4px;
+background-color: #2196F3;
+content: '';
 }
 
 /* END HEADER -------------------------------------------------- */
