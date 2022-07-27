@@ -129,11 +129,12 @@ body {
 #active-nav::after {
   position: absolute;
   display: block;
-  top: 45px;
+  top: 47.5px;
   width: 58px;
   height: 4px;
   background-color: #2196f3;
   content: "";
+  border-radius: 2px
 }
 
 /* END HEADER -------------------------------------------------- */
@@ -171,6 +172,13 @@ body {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
+  transition-property: background-color, transform;
+  transition-duration: 200ms;
+}
+.main-button:active{
+background-color: #fff;
+color: var(--main-color);
+transform: scale(1.1);
 }
 
 .button:hover,
@@ -255,7 +263,7 @@ body {
   position: absolute;
 
   transform: translate(0, 77%);
-  transition: transform 500ms linear;
+  transition: transform 200ms linear;
 }
 
 .project:hover .portfolio-project-cover {
@@ -632,6 +640,11 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   position: absolute;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  border: 1px solid rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
