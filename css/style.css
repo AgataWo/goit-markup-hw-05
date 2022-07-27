@@ -173,7 +173,7 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   transition-property: background-color, transform;
-  transition-duration: 200ms;
+  transition-duration: 50ms;
 }
 .main-button:active{
 background-color: #fff;
@@ -263,7 +263,7 @@ transform: scale(1.1);
   position: absolute;
 
   transform: translate(0, 77%);
-  transition: transform 200ms linear;
+  transition: transform 100ms linear;
 }
 
 .project:hover .portfolio-project-cover {
